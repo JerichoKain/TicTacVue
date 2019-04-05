@@ -1,14 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <TicTacToe 
-      v-on:win="wins++"
-      v-on:draw="draws++"
-      v-on:lose="loses++" />
-    <Score 
-      v-bind:wins="wins"
-      v-bind:draws="draws"
-      v-bind:loses="loses" />
+    <TicTacToe v-on:win="wins++" v-on:draw="draws++" v-on:lose="loses++" />
+    <Score v-bind:wins="wins" v-bind:draws="draws" v-bind:loses="loses" />
   </div>
 </template>
 

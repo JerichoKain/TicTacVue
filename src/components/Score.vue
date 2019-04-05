@@ -1,6 +1,6 @@
 <template>
   <div class="score">
-      <span>Score: {{wins}}-{{draws}}-{{loses}}</span>
+    <span>Score: {{ wins }}-{{ draws }}-{{ loses }}</span>
   </div>
 </template>
 
