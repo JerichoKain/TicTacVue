@@ -1,17 +1,33 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <TicTacToe 
+      v-on:win="wins++"
+      v-on:draw="draws++"
+      v-on:lose="loses++" />
+    <Score 
+      v-bind:wins="wins"
+      v-bind:draws="draws"
+      v-bind:loses="loses" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TicTacToe from "./components/TicTacToe.vue";
+import Score from "./components/Score.vue";
 
 export default {
   name: "app",
+  data() {
+    return {
+      wins: 0,
+      draws: 0,
+      loses: 0
+    };
+  },
   components: {
-    HelloWorld
+    TicTacToe,
+    Score
   }
 };
 </script>
@@ -22,7 +38,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>
