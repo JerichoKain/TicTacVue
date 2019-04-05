@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+# /dist - this is allowed on the gh-pages branch
 
 # local env files
 .env.local
