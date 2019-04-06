@@ -1,5 +1,7 @@
 # tic-tac-vue
 
+[https://jerichokain.github.io/TicTacVue/](https://jerichokain.github.io/TicTacVue/)
+
 ## Project setup
 ```
 npm install
