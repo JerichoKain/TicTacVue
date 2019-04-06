@@ -3,7 +3,11 @@
     <h1>Tic Tac Vue!</h1>
     <img alt="Vue logo" src="./assets/logo.png" />
     <Score v-bind:wins="wins" v-bind:draws="draws" v-bind:loses="loses" />
-    <TicTacToe v-on:win="UpdateScore('wins')" v-on:draw="UpdateScore('draws')" v-on:lose="UpdateScore('loses')" />
+    <TicTacToe
+      v-on:win="UpdateScore('wins')"
+      v-on:draw="UpdateScore('draws')"
+      v-on:lose="UpdateScore('loses')"
+    />
   </div>
 </template>
 

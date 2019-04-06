@@ -1,7 +1,14 @@
 <template>
   <div class="wrapper">
     <div class="game">
-      <div v-for="s in SQUARES" :key="s" id="s" class="cell" v-bind:class="PlayedClasses(s)" v-on:click="CrossesMove(s)" />
+      <div
+        v-for="s in SQUARES"
+        :key="s"
+        id="s"
+        class="cell"
+        v-bind:class="PlayedClasses(s)"
+        v-on:click="CrossesMove(s)"
+      />
     </div>
   </div>
 </template>
