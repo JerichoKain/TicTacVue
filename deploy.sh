@@ -6,20 +6,21 @@ set -e
 # build
 npm run build
 
-# navigate into the build output directory
-cd dist
-
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
-git init
-git add -A
-git commit -m 'deploy'
-
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:JerichoKain/TicTacVue.git master:gh-pages
+#move to deployment folder.
+cd ../TicTacVue-gh-pages/
+#update
+git pull
+# confirm this is the correct branch
+git checkout gh-pages
+# clean old build repo
+git rm css/* img/* js/*
+git commit -m "Preparing for Deployment"
+# copy files
+cp -rf ../TicTacVue/dist/* .
+# add resources and push to git
+git add css/* img/* js/* index.html favicon.ico
+git commit -m "Deployment"
+git status
+git push
 
 cd -
