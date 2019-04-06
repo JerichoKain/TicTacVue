@@ -4,7 +4,7 @@
       <div
         v-for="s in SQUARES"
         :key="s"
-        id="s"
+        :id="s"
         class="cell"
         v-bind:class="PlayedClasses(s)"
         v-on:click="CrossesMove(s)"
@@ -25,7 +25,7 @@ const wins = [
   ["NW", "C", "SE"],
   ["SW", "C", "NE"]
 ];
-const drawDelay = 750;
+const drawDelay = 250;
 
 export default {
   name: "TicTacToe",

@@ -1,6 +1,8 @@
 # tic-tac-vue
 
-[https://jerichokain.github.io/TicTacVue/](https://jerichokain.github.io/TicTacVue/)
+[Live Demo](https://jerichokain.github.io/TicTacVue/)
+[Selenium docs](https://selenium-python.readthedocs.io/)
+[Jupyter docs](https://jupyter.readthedocs.io/en/latest/)
 
 ## Project setup
 ```
@@ -15,16 +17,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
