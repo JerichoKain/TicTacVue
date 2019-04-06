@@ -1,60 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="game">
-      <div
-        id="NW"
-        class="cell"
-        v-bind:class="PlayedClasses('NW')"
-        v-on:click="CrossesMove('NW')"
-      ></div>
-      <div
-        id="N"
-        class="cell"
-        v-bind:class="PlayedClasses('N')"
-        v-on:click="CrossesMove('N')"
-      ></div>
-      <div
-        id="NE"
-        class="cell"
-        v-bind:class="PlayedClasses('NE')"
-        v-on:click="CrossesMove('NE')"
-      ></div>
-      <div
-        id="W"
-        class="cell"
-        v-bind:class="PlayedClasses('W')"
-        v-on:click="CrossesMove('W')"
-      ></div>
-      <div
-        id="C"
-        class="cell"
-        v-bind:class="PlayedClasses('C')"
-        v-on:click="CrossesMove('C')"
-      ></div>
-      <div
-        id="E"
-        class="cell"
-        v-bind:class="PlayedClasses('E')"
-        v-on:click="CrossesMove('E')"
-      ></div>
-      <div
-        id="SW"
-        class="cell"
-        v-bind:class="PlayedClasses('SW')"
-        v-on:click="CrossesMove('SW')"
-      ></div>
-      <div
-        id="S"
-        class="cell"
-        v-bind:class="PlayedClasses('S')"
-        v-on:click="CrossesMove('S')"
-      ></div>
-      <div
-        id="SE"
-        class="cell"
-        v-bind:class="PlayedClasses('SE')"
-        v-on:click="CrossesMove('SE')"
-      ></div>
+      <div v-for="s in SQUARES" :key="s" id="s" class="cell" v-bind:class="PlayedClasses(s)" v-on:click="CrossesMove(s)" />
     </div>
   </div>
 </template>
@@ -77,6 +24,7 @@ export default {
   name: "TicTacToe",
   data() {
     return {
+      SQUARES: squares, //Required to use const in template.
       start: null,
       available: [],
       crosses: [],
