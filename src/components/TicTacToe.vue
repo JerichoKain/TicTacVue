@@ -217,6 +217,7 @@ export default {
   flex-direction: column;
   align-items: center;
   user-select: none;
+  padding: 1em;
 }
 
 .game {
@@ -229,8 +230,8 @@ export default {
 .cell {
   border: 1px solid;
   float: left;
-  width: 32%;
-  height: 32%;
+  width: 32.9%;
+  height: 32.9%;
   font-size: 100px;
   display: flex;
   flex-direction: column;

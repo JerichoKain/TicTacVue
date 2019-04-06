@@ -1,6 +1,6 @@
 <template>
   <div class="score">
-    <span>Score: {{ wins }}-{{ draws }}-{{ loses }}</span>
+    <span>{{ wins }} Wins - {{ loses }} Loses - {{ draws }} Draws</span>
   </div>
 </template>
 
@@ -16,4 +16,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+span {
+  font-size: 2em;
+}
+</style>
