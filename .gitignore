@@ -12,6 +12,8 @@ node_modules
 #local venv
 .venv
 /jupyter
+*driver.exe
+*driver.log
 
 # Log files
 npm-debug.log*
