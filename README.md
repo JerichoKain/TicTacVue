@@ -10,7 +10,6 @@ Handy Links and Documentation:
 - [jest.js](https://jestjs.io/)
 
 ## Project setup
----
 ### Prerequisites
 This will assume you have the following software versions installed:
 
