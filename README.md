@@ -17,7 +17,7 @@ This will assume you have the following software versions installed:
    * `$ sudo apt-get install git`
 1) `$ node --version` => `v11.6.0`
    * Install `nvm` or "[node version manager]" if you haven't already.
-   * `$ nvm install v11.6.0 && nvm use v11.0.6` 
+   * `$ nvm install v11.6.0 && nvm use v11.0.6`
 2) `$ npm --version` => `6.5.0-next.0`
    * This should be installed with `node`
 3) `$ vue --version` => `3.3.0`
@@ -74,11 +74,8 @@ echo "prerequisites met, ready for setup!"
    * `$ python3 -m virtualenv .venv`
    * `$ source .venv/bin/activate`
    * `$ pip3 install requirements.txt`
-3) Build or Serve the Vue app
-   * Build: `$ npm run build`
-   * Serve: `$ npm run serve`
-4) Start Jupyter Notebook
-   * `$ jupyter notebook`
+3) Build Vue app
+   * `$ npm run build`
 
 or just run this code if you trust it:
 ```bash
@@ -92,11 +89,14 @@ source .venv/bin/activate
 pip3 install requirements.txt
 
 #build and serve
-npm run build && npm run serve
-
-#start jupyter notebook
-jupyter notebook
+npm run build
 ```
 ---
+### Serving and Running
+* Serve Vue app
+  * `$ npm run serve`
+* Start Jupyter Notebook
+   * `$ jupyter notebook`
+
 
 [node version manager]: https://github.com/creationix/nvm
