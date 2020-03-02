@@ -3,15 +3,16 @@
 # abort on errors
 set -e
 
+
+# switch to master branch
+git checkout origin/master
+git pull
+
 # build
 npm run build
 
-#move to deployment folder.
-cd ../TicTacVue-gh-pages/
-#update
-git pull
 # confirm this is the correct branch
-git checkout gh-pages
+git checkout origin/gh-pages
 # clean old build repo
 git rm css/* img/* js/*
 git commit -m "Preparing for Deployment"
@@ -23,4 +24,5 @@ git commit -m "Deployment"
 git status
 git push
 
-cd -
+#switch back to master.
+git checkout origin/master
