@@ -25,4 +25,4 @@ git status
 git push
 
 #switch back to master.
-git checkout origin/master
+git checkout master
