@@ -65,7 +65,7 @@ test "$(jupyter --version)" == "4.4.0" && echo "jupyter installed successfully" 
 echo "prerequisites met, ready for setup!"
 ```
 ---
-### Setup
+### Setup TicTacToe Board
 0) Checkout this github repo and move into this directory
    * `$ git clone https://github.com/JerichoKain/TicTacVue.git && cd TicTacVue`
 1) Install node.js dependecies to build vue app
@@ -92,7 +92,7 @@ pip3 install requirements.txt
 npm run build
 ```
 ---
-### Serving and Running
+### Serving and Running Jupyter Notebook for Tests.
 * Serve Vue app
   * `$ npm run serve`
 * Start Jupyter Notebook
